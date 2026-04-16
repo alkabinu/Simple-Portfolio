@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COLORS */
+:root {
+    --black: #0f0f0f;
+    --dark: #1c1c1c;
+    --red: #e50914;
+    --white: #ffffff;
+    --gray: #b3b3b3;
+}
+
+/* BODY */
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* NAVBAR */
+header {
+    background: var(--black);
+    padding: 15px 50px;
+    border-bottom: 1px solid var(--red);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--red);
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--red);
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero span {
+    color: var(--red);
+}
+
+.hero p {
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: var(--red);
+}
+
+/* DARK SECTION */
+.dark {
+    background-color: var(--dark);
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: var(--black);
+    border: 1px solid var(--red);
+    padding: 20px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: var(--red);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--black);
+    border-top: 1px solid var(--red);
+    font-size: 14px;
+    color: var(--gray);
+}
